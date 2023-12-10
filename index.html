@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbario</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <!--div class="autoplay-container" id="autoplay-container" onload="setTimeout()">
+        <div class="autoplay">
+            <span>Este site possui transcrição de audio, gostaria de reproduzir?</span>
+            <span style="font-size: 18px">Tentaremos reproduzir automaticamente em 10 segundos caso não responda</span>
+            <div class="autoplay-btns">
+                <button onclick="playAudio()">Sim</button>
+                <button onclick="stopAudio()"">Não</button>
+            </div>
+        </div>
+    </div-->
+    <main>
+        <div class="audio">
+            <audio controls autoplay id="audio">
+                <source src="assets/audio/murici.ogg" type="audio/ogg">
+            </audio>
+        </div>
+        <div class="herb">
+            <img class="herb-pic" src="assets/imgs/murici.jpg">
+            <div class="herb-name">
+                <span class="popular-name">Murici</span>
+                <span class="cientific-name">Byrsonima sericea</span>
+            </div>
+            
+            <!--div class="buttons">
+                <button class="herb-details-btn" onclick="toogle('description')" id="description">Descrição</button>
+                <button class="herb-details-btn" onclick="toogle('ocurrence')" id="ocurrence">Ocorrencia</button>
+                <button class="herb-details-btn" onclick="toogle('possible-ocurrence')" id="possible-ocurrence">Possíveis ocorrências</button>
+                <button class="herb-details-btn" onclick="toogle('fruit-caracteristic')" id="fruit-caracteristic">Características do fruto</button>
+                <button class="herb-details-btn" onclick="toogle('frutification-season')" id="frutification-season">Período de frutificação</button>
+            </div-->
+            <div class="herb-details herb-description ">
+                <h2>Descrição</h2>
+                <p>
+                    O muricizeiro é uma árvore nativa do Brasil e apresenta ampla distribuição geográfica no território brasileiro conhecida popularmente como murici, como também por muruci, murixi, fruta-de-jacu, entre outros, dentre suas características estão o aroma e o sabor. É uma árvore tropical de tamanho médio e geralmente atinge de 6 a 18 m de altura as flores são altas plumas alaranjadas que se transformam em frutos pequenos de 8 mm de tamanho quando maduros. O muricizeiro é típico da região Norte e Nordeste.
+                </p>
+            </div>
+            <div class="herb-details herb-ocurrence ">
+                <h2>Ocorrencia</h2>
+                <p>
+                    O muricizeiro ocorre no Norte (Pará, Tocantins), Nordeste (Alagoas, Bahia, Ceará, Maranhão, Paraíba, Pernambuco, Piauí, Rio Grande do Norte, Sergipe) Centro-Oeste (Goiás, Mato Grosso) Sudeste (Espírito Santo, Rio de Janeiro, São Paulo).
+                </p>
+            </div>
+            <div class="herb-details herb-possible-ocurrence">
+                <h2>Possíveis Ocorrencias</h2>
+                <p>
+                    É possível que haja ocorrencia do muricizeiro na região Centro-Oeste (Distrito Federal, Mato Grosso do Sul)
+                </p>
+            </div>
+            <div class="herb-details herb-fruit-caracteristic ">
+                <h2>Características do Fruto</h2>
+                <p>
+                    O murici é um fruto carnoso, do tipo drupóide, com formato globoso ou oblongo, oriundo de ovário tricarpelado, cada carpelo contém um óvulo. O tamanho e o peso do fruto apresentam pronunciadas variações, sendo encontrados frutos com diâmetro de até 8 mm, o peso médio dos frutos frescos é de aproximadamente 1,20 g. Ele tem cor amarelada no fruto maduro,o sabor do fruto é bastante apreciado regionalmente e pode ser consumido na forma de sorvetes, licores, sucos, e doces.
+                </p>
+            </div>
+            <div class="herb-details herb-frutification-season">
+                <h2>Período de Frutificação</h2>
+                 <p>
+                    O período de frutificação do mucuri se inicia em novembro/dezembro e vai até abril/maio do ano seguinte.
+                 </p>
+            </div>
+        </div>
+        <footer>
+            <span>Desenvolvido com ❤️ por <a target="_blank" href="https://github.com/filipetorresbr">Filipe Torres</a></span>
+        </footer>
+    </main>
+    <script src="assets/script.js"></script>
+</body>
+</html>
