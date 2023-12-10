@@ -1,5 +1,6 @@
 
 function playAudio(){
+    localStorage.setItem("play", true);
     document.querySelector("audio").play();
     document.getElementById('autoplay-container').style.display = "none";
 }

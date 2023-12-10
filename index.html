@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <!--div class="autoplay-container" id="autoplay-container" onload="setTimeout()">
+    <div class="autoplay-container" id="autoplay-container" onload="setTimeout()">
         <div class="autoplay">
             <span>Este site possui transcrição de audio, gostaria de reproduzir?</span>
-            <span style="font-size: 18px">Tentaremos reproduzir automaticamente em 10 segundos caso não responda</span>
+            <span id="autoplay-advice">Tentaremos reproduzir automaticamente em 10 segundos caso não responda</span>
             <div class="autoplay-btns">
                 <button onclick="playAudio()">Sim</button>
                 <button onclick="stopAudio()"">Não</button>
             </div>
         </div>
-    </div-->
+    </div>
     <main>
         <div class="audio">
             <audio controls autoplay id="audio">
