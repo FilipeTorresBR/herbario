@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbario</title>
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="icon" type="image/x-icon" href="../assets/imgs/favicon.png">
+</head>
+<body>
+    <div class="autoplay-container" id="autoplay-container" onload="setTimeout()">
+        <div class="autoplay">
+            <span>Este site possui transcrição de audio, gostaria de reproduzir?</span>
+            <span id="autoplay-advice">Tentaremos reproduzir automaticamente em 10 segundos caso não responda</span>
+            <div class="autoplay-btns">
+                <button onclick="playAudio()">Sim</button>
+                <button onclick="stopAudio()">Não</button>
+            </div>
+        </div>
+    </div>
+    <main>
+        <nav>
+            <a href="../index.html"><img src="../assets/imgs/home.png" class="home-btn"></a>
+            <div class="audio">
+                <audio controls autoplay id="audio">
+                    <source src="../assets/audio/macauba.aac" type="audio/aac">
+                </audio>
+            </div>
+        </nav>
+        <div class="herb">
+            <img class="herb-pic" src="../assets/imgs/macauba.jpg">
+            <div class="herb-name">
+                <span class="popular-name">Macaúba</span>
+                <span class="cientific-name">Acrocomia aculeata</span>
+            </div>
+            <div class="herb-details herb-description ">
+                <h2>Descrição</h2>
+                <p>
+                    A macaúba é uma palmeira que alcança até 25 metros de altura e possui espinhos longos e pontiagudos. Ela pode ser encontrada em quase todo o Brasil e por isso é também conhecida por outros nomes, como bocaiuva, macaíba, coco-baboso e coco-de-espinho. Os frutos são importantes para a fauna nativa, pois alimentam araras, cotias, capivaras, antas e emas.<br><br>
+                    Com folhas de até 5 metros de comprimento, apresenta flores e frutos em cachos que podem chegar a 60 quilos. As flores atraem abelhas e os frutos, marrom-amarelados, produzem óleo. A macaúba dá frutos quando alcança entre três e cinco anos de idade.
+                </p>
+            </div>
+            <div class="herb-details herb-ocurrence ">
+                <h2>Ocorrencia</h2>
+                <p>
+                    A macaúba é palmeira de vasta distribuição geográfica. Sua área de ocorrência estende-se desde os Estados de São Paulo e do Rio de Janeiro, passando por Minas Gerais e por todo o centro-oeste, nordeste e norte do Brasil, até ultrapassar as fronteiras, atingindo a América Central. 
+                </p>
+            </div>
+            <div class="herb-details herb-fruit-caracteristic ">
+                <h2>Características do Fruto</h2>
+                <p>
+                    Os frutos da macaúba possuem uma casca fina e quebradiça com a polpa macia e fibrosa de cor que varia de amarela a laranja escuro. No seu interior, existe uma grande amêndoa.
+                </p>
+            </div>
+            <div class="herb-details herb-frutification-season">
+                <h2>Período de Frutificação</h2>
+                 <p>
+                    O período de frutificação da macaúba tem início entre três e cinco anos. A floração normalmente ocorre de abril a junho e os frutos amadurecem de outubro a janeiro. Os frutos devem ser colhidos diretamente do pé. Caso estejam caídos no chão, a coleta deve ser feita rapidamente, para que não fiquem rançosos ou estraguem.
+                 </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <span>Desenvolvido com ❤️ por <a target="_blank" href="https://github.com/filipetorresbr">Filipe Torres</a></span>
+    </footer>
+    <script src="../assets/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbario</title>
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="icon" type="image/x-icon" href="../assets/imgs/favicon.png">
+</head>
+<body>
+    <div class="autoplay-container" id="autoplay-container" onload="setTimeout()">
+        <div class="autoplay">
+            <span>Este site possui transcrição de audio, gostaria de reproduzir?</span>
+            <span id="autoplay-advice">Tentaremos reproduzir automaticamente em 10 segundos caso não responda</span>
+            <div class="autoplay-btns">
+                <button onclick="playAudio()">Sim</button>
+                <button onclick="stopAudio()">Não</button>
+            </div>
+        </div>
+    </div>
+    <main>
+        <nav>
+            <a href="../index.html"><img src="../assets/imgs/home.png" class="home-btn"></a>
+            <div class="audio">
+                <audio controls autoplay id="audio">
+                    <source src="../assets/audio/ameixa.ogg" type="audio/ogg">
+                </audio>
+            </div>
+        </nav>
+        <div class="herb">
+            <img class="herb-pic" src="../assets/imgs/ameixa.jpg">
+            <div class="herb-name">
+                <span class="popular-name">Ameixa da mata</span>
+                <span class="cientific-name">Eugenia candolleana</span>
+            </div>
+            <div class="herb-details herb-description ">
+                <h2>Descrição</h2>
+                <p>
+                    Árvore ramificada de até 7 metros de altura com copa arredondada cônica e densa ramos arqueados, o tronco é revestido por casca fina, lisa, descamante de cor marrom avermelhada desnudando um tronco liso e avermelhado. A ameixa da mata é semidecídua, as folhas são acuminadas ou lanceoladas glabras e lustrosas e com até 8 a 19 cm de comprimento. As folhas são simples, glabras (sem pelos), opostas, com pecíolo ou haste de 5 a 8 mm de comprimento; a textura é coriácea(semelhante a couro), a margem é lisa e o ápice recurvado para baixo, com base cuneada(em forma de cunha) e ápice cuspidado (haste que divide em 2 ramos cada um com uma flor), cálice (invólucro externo) com 4 sépalas persistentes e corola (invólucro interno) com 5 pétalas livres, ovoides, Os frutos são bagas de 2 a 3 cm de diâmetro de cor roxo enegrecido quando madura. As flores são brancas, pediceladas, dispostas em inflorescências axilares, em ramos curtos. Ela também é chamada de Cambuí roxo e cereja preta. In Natura são muito apreciados mas podem ser utilizados em bolos, sucos, sorvetes e geleias.
+                </p>
+            </div>
+            <div class="herb-details herb-ocurrence ">
+                <h2>Ocorrencia</h2>
+                <p>
+                    É nativa dos tabuleiros praianos e restingas bem como a Mata Atlântica litorânea ocorrendo desde o nordeste até Santa Catarina.
+                </p>
+            </div>
+            <div class="herb-details herb-fruit-caracteristic ">
+                <h2>Características do Fruto</h2>
+                <p>
+                    O fruto é globoso ou alongado, negro com polpa espessa carnosa e de cor violácea a negra, com uma a duas sementes. Adapta-se bem no clima tropical e subtropical. Prefere solos bem drenados e férteis.
+                </p>
+            </div>
+            <div class="herb-details herb-frutification-season">
+                <h2>Período de Frutificação</h2>
+                 <p>
+                    Os frutos aparecem de março a maio.
+                 </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <span>Desenvolvido com ❤️ por <a target="_blank" href="https://github.com/filipetorresbr">Filipe Torres</a></span>
+    </footer>
+    <script src="../assets/script.js"></script>
+</body>
+</html>

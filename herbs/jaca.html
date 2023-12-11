@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbario</title>
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="icon" type="image/x-icon" href="../assets/imgs/favicon.png">
+</head>
+<body>
+    <div class="autoplay-container" id="autoplay-container" onload="setTimeout()">
+        <div class="autoplay">
+            <span>Este site possui transcrição de audio, gostaria de reproduzir?</span>
+            <span id="autoplay-advice">Tentaremos reproduzir automaticamente em 10 segundos caso não responda</span>
+            <div class="autoplay-btns">
+                <button onclick="playAudio()">Sim</button>
+                <button onclick="stopAudio()">Não</button>
+            </div>
+        </div>
+    </div>
+    <main>
+        <nav>
+            <a href="../index.html"><img src="../assets/imgs/home.png" class="home-btn"></a>
+            <div class="audio">
+                <audio controls autoplay id="audio">
+                    <source src="../assets/audio/jaca.ogg" type="audio/ogg">
+                </audio>
+            </div>
+        </nav>
+        <div class="herb">
+            <img class="herb-pic" src="../assets/imgs/jaca.png">
+            <div class="herb-name">
+                <span class="popular-name">Jaca</span>
+                <span class="cientific-name">Artocarpus heterophyllus</span>
+            </div>
+            <div class="herb-details herb-description ">
+                <h2>Descrição</h2>
+                <p>
+                    Ela apresenta grande porte, alcançando facilmente 30 metros de altura. Sua copa é piramidal a arredondada, densa e com ramos fortes, calibrosos, de seiva lactescente. As folhas são comumente simples, sendo lobadas apenas nas plantas jovens. Elas podem ser ovais, oblongas ou elípticas, e são inteiras, brilhantes, curto-pecioladas, com nervuras bem marcadas e textura coriácea. As flores masculinas e femininas surgem em inflorescências separadas, diretamente do caule e tem pouca importância ornamental.
+                </p>
+            </div>
+            <div class="herb-details herb-ocurrence ">
+                <h2>Ocorrencia</h2>
+                <p>
+                    A jaca (Artocarpus heterophyllus) é uma fruta tropical originária do sudoeste da Índia, mas agora é cultivada em várias regiões tropicais ao redor do mundo. Ela é conhecida por seu tamanho impressionante, textura única e sabor doce. A jaca é cultivada em países da Ásia, América do Sul, África e outras áreas tropicais.
+                </p>
+            </div>
+            <div class="herb-details herb-fruit-caracteristic ">
+                <h2>Características do Fruto</h2>
+                <p>
+                    O fruto é de forma ovalada, irregular, com casca grossa e áspera com pequenas saliências, verde, ou amarelada. Nascem diretamente do tronco e dos galhos mais grossos e chegam a pesar até 40 kg e medir até 70 cm. É um sincarpo, ou seja, infrutescência produzida pela fusão dos frutos formados pelos ovários de flores vizinhas. Maduro a sua casca tem cor amarelo acastanhada e aroma peculiar e forte.
+                </p>
+            </div>
+            <div class="herb-details herb-frutification-season">
+                <h2>Período de Frutificação</h2>
+                 <p>
+                    Durante os meses de setembro a novembro, a jaca desabrocha em flores exuberantes, preparando-se para dar lugar a seus frutos suculentos, que ficam prontos para colheita entre dezembro e março.
+                 </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <span>Desenvolvido com ❤️ por <a target="_blank" href="https://github.com/filipetorresbr">Filipe Torres</a></span>
+    </footer>
+    <script src="../assets/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbario</title>
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="icon" type="image/x-icon" href="../assets/imgs/favicon.png">
+</head>
+<body>
+    <div class="autoplay-container" id="autoplay-container" onload="setTimeout()">
+        <div class="autoplay">
+            <span>Este site possui transcrição de audio, gostaria de reproduzir?</span>
+            <span id="autoplay-advice">Tentaremos reproduzir automaticamente em 10 segundos caso não responda</span>
+            <div class="autoplay-btns">
+                <button onclick="playAudio()">Sim</button>
+                <button onclick="stopAudio()"">Não</button>
+            </div>
+        </div>
+    </div>
+    <main>
+        <nav>
+            <a href="../index.html"><img src="../assets/imgs/home.png" class="home-btn"></a>
+            <div class="audio">
+                <audio controls autoplay id="audio">
+                    <source src="../assets/audio/cupu.ogg" type="audio/ogg">
+                </audio>
+            </div>
+        </nav>
+        <div class="herb">
+            <img class="herb-pic" src="../assets/imgs/cupu.jpg">
+            <div class="herb-name">
+                <span class="popular-name">Cupuaçu</span>
+                <span class="cientific-name">Theobroma grandiflorum</span>
+            </div>
+            <div class="herb-details herb-description ">
+                <h2>Descrição</h2>
+                <p>
+                    O cupuaçu é uma árvore frutífera de origem nativa da região amazônica, com sabor e aroma típicos, também conhecida como cupu, cupuaçuzeiro e cupuaçueiro. A árvore do cupuaçu pode atingir até 15 m de altura e entre 6 a 8 m de diâmetro da copa. É uma espécie de crescimento tricômica, lançando um ramo que se divide em três, que crescem em paralelo ao solo, ao que um broto surgido da axila de um desses galhos retoma o crescimento vertical e assim sucessivamente. As folhas jovens são de cor rósea, atingindo de 25 a 30 cm de comprimento por 10 a 15 cm de largura quando maduras, de coloração verde escuro. A polinização é cruzada, com possibilidade de autofecundação.
+                </p>
+            </div>
+            <div class="herb-details herb-ocurrence ">
+                <h2>Ocorrencia</h2>
+                <p>
+                    O cupuaçu (Theobroma grandiflorum – família Malvaceae) possui distribuição geográfica com ocorrências confirmadas para a região norte nos estados do Acre, Amazonas, Pará e Rondônia, predominando no domínio fitogeográfico Amazônico. Está presente em floresta de igapó e floresta de várzea. Pode ser encontrado esporadicamente nos países vizinhos da América Latina como Colômbia, Venezuela, Equador e Costa Rica.
+                </p>
+            </div>
+            <div class="herb-details herb-fruit-caracteristic ">
+                <h2>Características do Fruto</h2>
+                <p>
+                    O seu fruto é uma baga drupácea, elipsoide, com extremidades obtusas ou arredondadas. Mede de 12 a 25 cm de comprimento e 10 a 13 cm de diâmetro, apresentando um peso médio de 1kg, sendo 30 a 40% de polpa, com cerca de 35 sementes, 15 a 20% do fruto. A casca é dura e lenhosa, coberta de indumento ferrugíneo equivalendo de 40 a 50% do peso do fruto. O cupuaçu possui eficiência energética com aproximadamente 16 kg de frutos por árvore. A casca do fruto pode ser empregada como ração para gado e adubo, assim como também é utilizado para a casca do cacau.
+                </p>
+            </div>
+            <div class="herb-details herb-frutification-season">
+                <h2>Período de Frutificação</h2>
+                 <p>
+                    A frutificação ocorre entre os meses de novembro e junho, atingindo o máximo de sua produção entre os meses de fevereiro e março.
+                 </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <span>Desenvolvido com ❤️ por <a target="_blank" href="https://github.com/filipetorresbr">Filipe Torres</a></span>
+    </footer>
+    <script src="../assets/script.js"></script>
+</body>
+</html>

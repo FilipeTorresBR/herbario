@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbario</title>
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="icon" type="image/x-icon" href="../assets/imgs/favicon.png">
+</head>
+<body>
+    <div class="autoplay-container" id="autoplay-container" onload="setTimeout()">
+        <div class="autoplay">
+            <span>Este site possui transcrição de audio, gostaria de reproduzir?</span>
+            <span id="autoplay-advice">Tentaremos reproduzir automaticamente em 10 segundos caso não responda</span>
+            <div class="autoplay-btns">
+                <button onclick="playAudio()">Sim</button>
+                <button onclick="stopAudio()">Não</button>
+            </div>
+        </div>
+    </div>
+    <main>
+        <nav>
+            <a href="../index.html"><img src="../assets/imgs/home.png" class="home-btn"></a>
+            <div class="audio">
+                <audio controls autoplay id="audio">
+                    <source src="../assets/audio/cacau.ogg" type="audio/ogg">
+                </audio>
+            </div>
+        </nav>
+        <div class="herb">
+            <img class="herb-pic" src="../assets/imgs/cacau.webp">
+            <div class="herb-name">
+                <span class="popular-name">Cacau</span>
+                <span class="cientific-name">Theobroma cacao</span>
+            </div>
+            <div class="herb-details herb-description ">
+                <h2>Descrição</h2>
+                <p>
+                    O cacau (Theobroma cacao) é uma árvore frutífera nativa das regiões tropicais da América Central e do Sul. A árvore do cacau é perene e pode crescer até uma altura de 4 a 8 metros. Suas folhas são grandes e ovais, de cor verde escura. As flores do cacau aparecem diretamente no tronco e nos galhos e são pequenas e de coloração branca ou rosada. O fruto do cacau é conhecido como cacau (ou também como vagem) e tem uma casca dura e rugosa, de cor amarela, vermelha ou laranja, dependendo da variedade.
+                </p>
+            </div>
+            <div class="herb-details herb-ocurrence ">
+                <h2>Ocorrencia</h2>
+                <p>
+                    O cacau é cultivado principalmente em regiões de clima tropical, como a África Ocidental (Costa do Marfim, Gana, Nigéria), América Central (especialmente países como República Dominicana e Colômbia) e algumas regiões do Brasil e Indonésia. No Brasil, possui distribuição geográfica com ocorrências confirmadas para os estados do norte (Acre, Amazonas, Amapá e Rondônia) e nordeste (Bahia e Maranhão). Está sob os domínios fitogeográficos da Amazônia e Mata atlântica, ocorrendo em floresta de terra firme, floresta de várzea e em áreas antropizadas. 
+                </p>
+            </div>
+            <div class="herb-details herb-fruit-caracteristic ">
+                <h2>Características do Fruto</h2>
+                <p>
+                    O cacau é um fruto de formato oval ou alongado, semelhante a uma melancia pequena. Sua casca dura contém uma polpa branca e suculenta, que envolve as sementes de cacau, que são as partes usadas para produzir chocolate e outros produtos à base de cacau. As sementes são dispostas em fileiras, envolvidas por uma polpa viscosa e possuem um sabor amargo característico.
+                </p>
+            </div>
+            <div class="herb-details herb-frutification-season">
+                <h2>Período de Frutificação</h2>
+                 <p>
+                    A árvore do cacau geralmente começa a produzir frutos quando atinge a idade de 3 a 5 anos, e seu período de frutificação ocorre ao longo do ano, devido às condições climáticas favoráveis das regiões tropicais. No entanto, há variações conforme a região e o clima, e em alguns casos, a árvore pode produzir frutos durante todo o ano. Dependendo das condições de cultivo, o período de frutificação pode se estender em alguns meses do ano ou até mesmo ser constante.
+                 </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <span>Desenvolvido com ❤️ por <a target="_blank" href="https://github.com/filipetorresbr">Filipe Torres</a></span>
+    </footer>
+    <script src="../assets/script.js"></script>
+</body>
+</html>

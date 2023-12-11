@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbario</title>
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="icon" type="image/x-icon" href="../assets/imgs/favicon.png">
+</head>
+<body>
+    <div class="autoplay-container" id="autoplay-container" onload="setTimeout()">
+        <div class="autoplay">
+            <span>Este site possui transcrição de audio, gostaria de reproduzir?</span>
+            <span id="autoplay-advice">Tentaremos reproduzir automaticamente em 10 segundos caso não responda</span>
+            <div class="autoplay-btns">
+                <button onclick="playAudio()">Sim</button>
+                <button onclick="stopAudio()"">Não</button>
+            </div>
+        </div>
+    </div>
+    <main>
+        <nav>
+            <a href="../index.html"><img src="../assets/imgs/home.png" class="home-btn"></a>
+            <div class="audio">
+                <audio controls autoplay id="audio">
+                    <source src="../assets/audio/bacupari.ogg" type="audio/ogg">
+                </audio>
+            </div>
+        </nav>
+        <div class="herb">
+            <img class="herb-pic" src="../assets/imgs/bacupari.webp">
+            <div class="herb-name">
+                <span class="popular-name">Bacupari</span>
+                <span class="cientific-name">Garcinia gardneriana</span>
+            </div>
+            <div class="herb-details herb-description ">
+                <h2>Descrição</h2>
+                <p>
+                    Bacupari é uma árvore nativa do Brasil, porém não endêmica, ou seja, é encontrada em outras regiões, especialmente na Bolívia e no Peru. A árvore pode atingir cerca de 20 metros de altura e ser utilizada para o reflorestamento em áreas degradadas. O bacupari, é considerada de grande porte, pois mede entre 5 e 10 metros de altura. Possui tronco com a casca de textura rugosa, folhagem peciolada simples, bordos internos que medem de 6 até 15 centímetros e flores pequenas, esbranquiçadas reunidas em conjunto. O termo bacupari vem do tupi e significa “fruta da cerca”. O nome vem do padrão de crescimento dos ramos ascendentes, que ocorre em sentido horizontal. Alguns acreditam que esse nome também pode ter origem do costume antigo dos índios cercarem as roças com cultivos de bacupari. 
+                </p>
+            </div>
+            <div class="herb-details herb-ocurrence ">
+                <h2>Ocorrencia</h2>
+                <p>
+                    É uma árvore nativa do Brasil, porém o bacupari pode ser encontrado em outras regiões, especialmente na Bolívia e no Peru. No Brasil a árvore pode ser encontrada na região amazônica até o Rio Grande do Sul, sendo o fruto muito apreciado pelas populações ribeirinhas. No entanto, não é tão fácil encontrar uma árvore de bacupari, principalmente nas regiões urbanas.
+                </p>
+            </div>
+            <div class="herb-details herb-fruit-caracteristic ">
+                <h2>Características do Fruto</h2>
+                <p>
+                    O fruto e a casca são comestíveis, adocicados e refrescantes e, mais importante, dotados de propriedades muito benéficas para a saúde, como vem sendo observado em estudos científicos recentes. O fruto do bacupari é comestível, assim como a sua casca. Seu sabor é refrescante, adstringente. Em uma porção de 100 gramas, há cerca de 46 calorias.
+                </p>
+            </div>
+            <div class="herb-details herb-frutification-season">
+                <h2>Período de Frutificação</h2>
+                 <p>
+                    A árvore frutifica entre os meses de dezembro a abril.
+                 </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <span>Desenvolvido com ❤️ por <a target="_blank" href="https://github.com/filipetorresbr">Filipe Torres</a></span>
+    </footer>
+    <script src="../assets/script.js"></script>
+</body>
+</html>

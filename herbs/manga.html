@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbario</title>
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="icon" type="image/x-icon" href="../assets/imgs/favicon.png">
+</head>
+<body>
+    <div class="autoplay-container" id="autoplay-container" onload="setTimeout()">
+        <div class="autoplay">
+            <span>Este site possui transcrição de audio, gostaria de reproduzir?</span>
+            <span id="autoplay-advice">Tentaremos reproduzir automaticamente em 10 segundos caso não responda</span>
+            <div class="autoplay-btns">
+                <button onclick="playAudio()">Sim</button>
+                <button onclick="stopAudio()">Não</button>
+            </div>
+        </div>
+    </div>
+    <main>
+        <nav>
+            <a href="../index.html"><img src="../assets/imgs/home.png" class="home-btn"></a>
+            <div class="audio">
+                <audio controls autoplay id="audio">
+                    <source src="../assets/audio/manga.ogg" type="audio/ogg">
+                </audio>
+            </div>
+        </nav>
+        <div class="herb">
+            <img class="herb-pic" src="../assets/imgs/manga.jpg">
+            <div class="herb-name">
+                <span class="popular-name">Manga</span>
+                <span class="cientific-name">Mangifera indica</span>
+            </div>
+            <div class="herb-details herb-description ">
+                <h2>Descrição</h2>
+                <p>
+                    A manga é uma fruta tropical originária do sul da Ásia, mas também é amplamente cultivada em climas quentes ao redor do mundo, incluindo América do Sul, África e Austrália. Ela pertence à família Anacardiaceae. Árvore de grande porte atinge até 35 ou 40 m de altura, com copa densa, frondosa e com raio de até 10 m. As folhas são perenes, coriáceas, de coloração avermelhada quando jovem e verde-escura posteriormente.
+                </p>
+            </div>
+            <div class="herb-details herb-ocurrence ">
+                <h2>Ocorrencia</h2>
+                <p>
+                    Distribuição Geográfica vai do Norte (Acre, Amazonas, Amapá, Pará, Rondônia, Roraima, Tocantins. Nordeste (Alagoas, Bahia, Ceará, Maranhão, Paraíba, Pernambuco, Piauí, Rio Grande do Norte, Sergipe. Centro-Oeste (Distrito Federal, Goiás, Mato Grosso do Sul, Mato Grosso). Sudeste (Espírito Santo, Minas Gerais, Rio de Janeiro, São Paulo). Sul (Paraná, Rio Grande do Sul, Santa Catarina)
+                </p>
+            </div>
+            <div class="herb-details herb-fruit-caracteristic ">
+                <h2>Características do Fruto</h2>
+                <p>
+                    A manga é uma fruta que possui uma casca fina e lisa, que varia em cores como verde, amarelo ou vermelho, dependendo da variedade e do estágio de maturação. A polpa da manga é suculenta, doce e fibrosa, e pode ser de diferentes cores, como amarela, laranja ou verde. A fruta também possui uma grande semente no centro. As mangas são conhecidas por serem ricas em nutrientes, como vitamina C, vitamina A, fibras e antioxidantes. Elas são consumidas in natura, em sucos, saladas de frutas, sobremesas e até mesmo em pratos salgados e molhos.
+                </p>
+            </div>
+            <div class="herb-details herb-frutification-season">
+                <h2>Período de Frutificação</h2>
+                 <p>
+                    O período de frutificação da manga varia de acordo com a região e a variedade da fruta, mas geralmente ocorre entre os meses de dezembro e abril. Durante esse período, as mangueiras produzem uma grande quantidade de frutos maduros, prontos para serem colhidos.
+                 </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <span>Desenvolvido com ❤️ por <a target="_blank" href="https://github.com/filipetorresbr">Filipe Torres</a></span>
+    </footer>
+    <script src="../assets/script.js"></script>
+</body>
+</html>
