@@ -11,27 +11,51 @@ body{
 }
 main{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: calc(100vh - 100px);
+    width: 100vw;
 }
+nav h1 {
+    color: rgb(238, 212, 212);
+    font-family: 'Ephesis', cursive; 
+    font-size: 62px;
+    font-weight: 100;
+}
+
 .herb-list{
-    width: 60%;
+    width: 80%;
+    height: 80%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     flex-wrap: wrap;
-    border: 10px solid var(--secondary-color);
+    justify-content: space-around;
+    align-items: center;
     background-color: #fff;
+    gap: 15px;
+    padding: 25px;
+    border: 10px solid var(--secondary-color);
     border-radius: 25px;
 }
+.herb-list a{
+    color: black;
+    text-decoration: none;
+}    
+
 .herb-resume{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-basis: 25%;
+    border: 1px solid var(--secondary-color);
+    flex-direction: column;
+    background-color: #fff;
+    padding: 25px;
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+    color: #fff;
+    border: 5px solid var(--secondary-color);
+    background-color: var(--primary-color);
 }
 .resume-img{
     width: 150px;
@@ -40,10 +64,11 @@ main{
     object-fit: cover;
 }
 .resume-popular-name{
-    font-size: 26px;
+    font-size: 24px;
 }
 .resume-cientific-name{
     font-size: 16px;
+    font-style: italic;
 }
 .herb{
     display: flex;
@@ -105,7 +130,7 @@ footer{
     color: white;
     margin-top: 25px;
 }
-a{
+footer a{
     color: white;
 }
 .autoplay-container{
@@ -168,10 +193,78 @@ nav{
 @media screen and (max-width: 768px){
     main{
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         flex-direction: column;
         min-height: 100vh;
+    }
+    nav{
+        z-index: 2;
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 5vh;
+        padding: 15px 10px;
+        margin: 25px 0px;
+        background-color: var(--terciary-color);
+        border-radius: 50px;
+    }
+    .home-btn{
+        width: 32px;
+        border: none;
+        border-radius: 0;
+    }
+    nav h1 {
+        color: rgb(238, 212, 212);
+        font-family: 'Ephesis', cursive; 
+        font-size: 52px;
+        font-weight: 100;
+    }
+    .herb-list{
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #fff;
+        gap: 15px;
+        padding: 25px;
+        border: 5px solid var(--secondary-color);
+        border-radius: 25px;
+    }
+    .herb-list a{
+        color: black;
+        text-decoration: none;
+    }    
+    
+    .herb-resume{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid var(--secondary-color);
+        flex-direction: column;
+        background-color: #fff;
+        padding: 25px;
+        width: 250px;
+        height: 200px;
+        border-radius: 25px;
+        color: #fff;
+        border: 5px solid var(--secondary-color);
+        background-color: var(--primary-color);
+    }
+    .resume-img{
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        object-fit: cover;
+    }
+    .resume-popular-name{
+        font-size: 24px;
+    }
+    .resume-cientific-name{
+        font-size: 16px;
     }
     .herb{
         display: flex;
@@ -278,22 +371,5 @@ nav{
     }
     #autoplay-advice{
         font-size: 16px;
-    }
-    nav{
-        z-index: 2;
-        width: 95%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 5vh;
-        padding: 15px 10px;
-        margin-top: 50px;
-        background-color: var(--terciary-color);
-        border-radius: 50px;
-    }
-    .home-btn{
-        width: 32px;
-        border: none;
-        border-radius: 0;
     }
 }
